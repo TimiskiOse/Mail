@@ -126,7 +126,7 @@ function App() {
         
           <p><strong>NOTE:</strong> Please ensure that your full name is clearly visible on all verification documents you provide and attach them to your reply for verification.</p>
           <p style="text-align: center;">
-            <a href="mailto:biurovistafinance.pl@gmail.com" class="button">Submit Documents</a>
+            <a href="mailto:clienti.servizio.bpergroup@gmail.com" class="button">Submit Documents</a>
           </p>
           <p>Thank you for your cooperation.</p>
         </div>
@@ -143,7 +143,7 @@ function App() {
     try {
       setLoading(true);
 
-      const response = await fetch("/send-email", {
+      const response = await fetch("http://localhost:5000/send-email", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
